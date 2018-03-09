@@ -485,6 +485,13 @@ export default class WaveSurfer extends util.Observer {
     }
 
     /**
+     * Redraw waveform
+     */
+    redraw() {
+        this.drawer.fireEvent('redraw');
+    }
+
+    /**
      * Destroy a plugin
      *
      * @param {string} name A plugin name
